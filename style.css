@@ -1,8 +1,6 @@
 body {
-  background: #606c88;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-image: url("images/tile.png");
+  background-repeat: repeat;
 }
 
 .banner-text {
@@ -18,16 +16,17 @@ background: linear-gradient(to bottom, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, 
 .banner-header{
   position: relative;
   margin: 0 auto;
+  background-image: url("images/tile.png") repeat;
 }
 
 .banner-dan{
   width: auto;
-  height:30rem;
+  height:25rem;
 }
 
 .devil-dan{
   width: auto;
-  height: 5rem;
+  height: 8rem;
   position: absolute;
   top: 5rem;
   left: -3rem;
@@ -36,7 +35,7 @@ background: linear-gradient(to bottom, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, 
 
 .angel-dan{
   width: auto;
-  height: 5rem;
+  height: 8rem;
   position: absolute;
   top: 4.5rem;
   right: -2rem;
@@ -58,6 +57,11 @@ background: linear-gradient(to bottom, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, 
 
 .section-text{
   margin: 0 auto;
+}
+
+.video{
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 
