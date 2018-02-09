@@ -1,6 +1,5 @@
 body {
-  background-image: url("images/tile.png");
-  background-repeat: repeat;
+
 }
 
 .banner-text {
@@ -8,55 +7,129 @@ body {
 }
 
 .banner-subtext{
-  font-size: 2rem;
+  font-size: 5rem;
   letter-spacing: .125rem;
   /*position: relative;*/
+  color: black;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.05);
+  font-family: 'VT323', monospace;
+  margin: 0 auto;
+  margin-top: 2rem;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 10s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 10s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 10s infinite;
+
 }
+
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: orange;}
+}
+
+
+.banner{
+  /*background-image: url("images/corgi.jpeg");
+  */
+}
+
+
+
 
 .banner-header{
   position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
-  background-image: url("images/tile.png") repeat;
+  margin-top: 5rem;
+  z-index:0;
+  overflow-wrap:
 }
 
 .banner-dan{
-  width: auto;
-  height:25rem;
-}
-
-.devil-dan{
-  width: auto;
-  height: 8rem;
-  position: absolute;
-  top: 5rem;
-  left: -3rem;
-
-}
-
-.angel-dan{
-  width: auto;
-  height: 8rem;
-  position: absolute;
-  top: 4.5rem;
-  right: -2rem;
-
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  z-index: 0;
 }
 
 .section {
   height: 80vh;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.section-1{
+  background-image: url("images/tile.png");
+  background-repeat: repeat;
+  background-size: 80px;
+}
 .section-header {
   margin: 0 auto;
+}
+
+.toppers{
+  z-index: 1;
+  display: flex;
+}
+
+.devil-dan{
+  width: 6rem;
+  height: auto;
+  position: fixed;
+  top: 2rem;
+  left: 5rem;
 
 }
 
-.section-text{
-  margin: 0 auto;
+.angel-dan{
+  width: 5.5rem;
+  height: auto;
+  position: fixed;
+  top: 2rem;
+  right: 5rem;
+
+}
+
+.candle-row{
+  padding: 1rem;
+
+}
+
+.candle{
+  width: 1rem;
+  height: auto;
 }
 
 .video{
@@ -76,5 +149,9 @@ body {
 .footer-text{
   justify-content: center;
   margin: 0 auto;
+  margin-top: 2rem;
   align-items: center;
 }
+
+
+
